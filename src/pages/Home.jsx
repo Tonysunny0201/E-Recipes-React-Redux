@@ -52,8 +52,8 @@ const Home = () => {
                     <div key={product?.id} className="rounded border p-2 shadow">
                       <img width={'100%'} height={'100px'} src={product?.image} alt="" />
                       <div className='text-center'>
-                        <h3 className='text-xl text-white font-bold'>{product?.name}</h3>
-                        <h4 className='text-lg text-white'>{product?.cuisine}</h4>
+                        <h3 className='text-xl font-bold'>{product?.name}</h3>
+                        <h4 className='text-lg'>{product?.cuisine}</h4>
                         <Link className='bg-yellow-500 rounded p-1 mt-3 text-white inline-block' to={`${product?.id}/view`}>View More...</Link>
                       </div>
                     </div>
